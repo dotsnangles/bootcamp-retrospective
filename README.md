@@ -18,6 +18,7 @@
 ---
 
 ## NMT with Transformers
+[Repo Link](https://github.com/dotsnangles/NMT-with-transformers)  
 
 (진행 중)
 
@@ -36,6 +37,7 @@
 ---
 
 ## Backend API for Chatbot with Poly Encoder
+[Repo Link](https://github.com/dotsnangles/backend-api-for-chatbot-with-Poly-Encoder)  
 
 ### Objectives
 - 챗봇 서비스를 위한 DB 연동 REST API를 개발한다.
@@ -72,6 +74,7 @@
 ---
 
 ## Retrieval-based Chatbot with Poly Encoder
+[Repo Link](https://github.com/dotsnangles/retrieval-based-chatbot-with-Poly-Encoder)  
 
 ### Objectives
 - AIHub의 감성대화 데이터로 폴리 인코더를 훈련시키고 리트리벌 챗봇을 구현한다.
@@ -119,6 +122,7 @@
 ---
 
 ## Poly Encoder
+[Repo Link](https://github.com/dotsnangles/Poly-Encoder)  
 
 ### Objectives
 - 폴리 인코더 및 리트리벌 시스템을 이해하고 챗봇 구현 방안을 모색한다.
@@ -152,6 +156,7 @@
 ---
 
 ## Vanila Transformer Implementation
+[Repo Link](https://github.com/dotsnangles/vanilla-transformer-implementations)  
 
 ### Objectives
 - 더 높은 수준의 구현 능력과 모델 활용을 위해 PyTorch를 학습하고 바닐라 트랜스포머를 구현한다.
@@ -185,6 +190,7 @@
 ---
 
 ## Text Summarisation with BART
+[Repo Link](https://github.com/dotsnangles/text-summarisation-with-BART)  
 
 ### Objectives
 - Dacon AI 기반 회의 녹취록 요약 경진대회
@@ -244,6 +250,7 @@
 ---
 
 ## Text Classification with BERT
+[Repo Link](https://github.com/dotsnangles/text-classification-with-BERT)  
 
 ### Objectives
 - Dacon 뉴스 토픽 분류 AI 경진대회
@@ -291,6 +298,7 @@
 ---
 
 ## Poetry Generator with GPT2
+[Repo Link](https://github.com/dotsnangles/poetry-generator-with-GPT2)  
 
 ### Objectives
 - 시 생성 언어모델 개발을 위해 웹 크롤링한 데이터를 활용, GPT2를 파인튜닝한다.
@@ -329,6 +337,7 @@
 ---
 
 ## LSTM Seq2Seq with Attention
+[Repo Link](https://github.com/dotsnangles/LSTM-Seq2Seq-with-Attention)  
 
 ### Objectives
 - 영한 번역기 개발을 위해 LSTM Encoder-Decoder with Attention 모델을 훈련하고 BLUE 스코어를 측정한다.
@@ -364,6 +373,7 @@
 ---
 
 ## Text Mining with ML
+[Repo Link](https://github.com/dotsnangles/text-mining-with-ML)  
 
 ### Objectives
 - 웹툰 독자의 경향을 파악하기 위해 수치 데이터를 웹 크롤링 후 분석 및 시각화를 진행한다.
@@ -409,6 +419,7 @@
 ---
 
 ## Object Detection with YOLOv5
+[Repo Link](https://github.com/dotsnangles/object-detection-with-YOLOv5)  
 
 ### Objectives
 - 폐기물 객체 인식 모델을 개발하기 위해 AIHub의 생활 폐기물 데이터를 활용해 YOLOv5를 훈련한다.
@@ -449,6 +460,7 @@
 ---
 
 ## Image Classification with ResNet
+[Repo Link](https://github.com/dotsnangles/image-classification-with-ResNet)  
 
 ### Objectives
 - 재활용품 분류를 위한 모델을 개발하기 위해 이미지를 웹 크롤링한 후 ResNet을 파인튜닝한다.
