@@ -21,7 +21,7 @@
 [Repo Link](https://github.com/dotsnangles/NMT-with-transformers) (보류 중)
 
 ### Objectives
-- PLM 모델을 활용한 실사용 목적의 번역기를 만들기 위한 기술 요건을 파악한다.
+- PLM 모델을 활용한 실사용 목적의 번역기를 위한 기술 요건을 파악한다.
 
 ### Envs and Requirements
 - AWS EC2, Ubuntu, Conda, Git/Github, DVC, WandB, 
