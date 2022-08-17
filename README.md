@@ -80,6 +80,13 @@
 - 모델 추론과 가장 긴밀하게 연결되어 있는 Backend 기술에 대해 알아가며 AI를 실제 서비스화하기 위해 필요한 다양한 업무들을 살펴보고 이해할 수 있었음
 
 ### References
+- https://flask.palletsprojects.com/
+- https://www.mysql.com/
+- https://www.sqlalchemy.org/
+- https://marshmallow.readthedocs.io/
+- [Flask Workshop (PyCon 2015)](https://www.youtube.com/watch?v=DIcpEg77gdE) - Miguel Grinberg
+- [Introduction to SQLAlchemy (PyCon US 2013)](https://youtu.be/woKYyhLCcnU) - Mike Bayer
+- [Github으로 따라하는 버전 관리](https://www.boostcourse.org/cs102) - 생활코딩
 
 ---
 
@@ -128,7 +135,9 @@
 - 부트캠프 프로젝트 평가 1위를 달성했으나 프로젝트 관리나 모듈화 측면에서 아쉬움이 있었기에 추후 보완을 계획하게 됨
 
 ### References
-
+- https://huggingface.co/
+- https://pytorch.org/
+- [chijames/Poly-Encoder](https://github.com/chijames/Poly-Encoder)
 ---
 
 ## Poly Encoder
@@ -162,6 +171,14 @@
 - 사전에 Dialogflow를 사용해보며 접했던 기술들의 원리가 무엇인지 이해하게 됨
 
 ### References
+- [Poly-encoders: Transformer Architectures and Pre-training Strategies for Fast and Accurate Multi-sentence Scoring](https://paperswithcode.com/paper/190501969) - Samuel Humeau, et al.
+- [Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks](https://paperswithcode.com/paper/sentence-bert-sentence-embeddings-using) - Nils Reimers, Iryna Gurevych
+- https://www.sbert.net/
+- https://huggingface.co/
+- https://pytorch.org/
+- [chijames/Poly-Encoder](https://github.com/chijames/Poly-Encoder)
+- https://ibm.github.io/dstc-noesis/public/
+- https://dialogflow.cloud.google.com/
 
 ---
 
@@ -196,6 +213,17 @@
 - 특히 foward 부분에 집중하는 것만으로도 해당 블록이 어떤 작업을 하는지 알 수 있게 된 것은 큰 수확이었음
 
 ### References
+- Neural Machine Translation by Jointly Learning to Align and Translate - Dzmitry Bahdanau, et al.
+- [Attention Is All You Need](https://paperswithcode.com/paper/attention-is-all-you-need) - Ashish Vaswani, et al.
+- [The Annotated Transformer](http://nlp.seas.harvard.edu/annotated-transformer/) - Austin Huang, et al.
+- [The Illustrated Transformer](https://jalammar.github.io/illustrated-transformer/) - Jay Alammar
+- [Pytorch Transformers from Scratch (Attention is all you need)](https://www.youtube.com/watch?v=U0s0f995w14) - Aladdin Persson
+- [Transformer: Concepts, Building Block, Attention, Sample Implementation in PyTorch](https://www.youtube.com/watch?v=6PmIoCnqcFU) - Rowel Atienza
+- [Transformer: Attention Is All You Need](https://www.youtube.com/watch?v=AA621UofTUA) - 나동빈
+- [nlp-tutorial](https://github.com/graykode/nlp-tutorial) - graykode
+- [labml.ai Deep Learning Paper Implementations](https://github.com/labmlai/annotated_deep_learning_paper_implementations)
+- https://huggingface.co/
+- https://pytorch.org/
 
 ---
 
@@ -256,6 +284,12 @@
 - 과거 프로젝트에서 경험한 RNN 계열의 Encoder-Decoder 번역기와 비교시 태스크 차이는 있으나 훈련 방식이 동일하다는 점을 고려했을 때 Transformer와 PLM의 등장으로 NLP 전반의 수행 능력이 크게 높아졌음을 체감
 
 ### References
+- [Dacon AI 기반 회의 녹취록 요약 경진대회](https://dacon.io/competitions/official/235813/overview/description)
+- EDA: Easy Data Augmentation Techniques for Boosting Performance on Text Classification Tasks - Jason Wei, Kai Zou
+- Natural Language Processing with Transformers - Lewis Tunstall, et al.
+- [NLP Data Augmentation using Huggingface Transformers](https://towardsdatascience.com/nlp-data-augmentation-using-transformers-89a44a993bab) - Manu Suryavansh
+- https://huggingface.co/
+- https://pytorch.org/
 
 ---
 
@@ -304,7 +338,11 @@
 - 기획부터 구현까지 각각의 판단들이 모여 하나의 결과물을 만들어내는 만큼 다양한 가능성에 대해 생각하고 타당성을 검토하며 프로젝트를 진행해야 한다는 것을 배움
 
 ### References
-
+- [Dacon 뉴스 토픽 분류 AI 경진대회](https://dacon.io/competitions/official/235747/overview/description)
+- Natural Language Processing with Transformers - Lewis Tunstall, et al.
+- https://huggingface.co/
+- https://pytorch.org/
+- https://scikit-learn.org/
 ---
 
 ## Poetry Generator with GPT2
@@ -343,6 +381,10 @@
 - 좋은 결과물을 얻기 위해서는 좋은 데이터를 사용해야 한다는 점을 재차 확인
 
 ### References
+- https://huggingface.co/
+- https://pytorch.org/
+- https://github.com/SKT-AI/KoGPT2
+- https://jalammar.github.io/illustrated-gpt2/
 
 ---
 
@@ -379,6 +421,8 @@
 - 함수형 모델 작성과 수정에 있어서 어려움이 많았기 때문에 추후 복습과 재학습의 필요성을 느낌
 
 ### References
+- https://www.tensorflow.org/
+- https://keras.io/
 
 ---
 
@@ -425,6 +469,13 @@
 - 같은 하이퍼 파라미터 설정으로 다른 결과가 도출되는 것을 방지하기 위해 랜덤스테이트(Seed)를 고정해야 함을 알게 됨
 
 ### References
+- 텍스트마이닝을 위한 한국어 불용어 목록 연구 - 길호현
+- https://www.crummy.com/software/BeautifulSoup/
+- https://pandas.pydata.org/
+- https://konlpy.org/
+- https://radimrehurek.com/gensim/
+- https://scikit-learn.org/
+- https://www.pythoncheatsheet.org/
 
 ---
 
@@ -466,6 +517,7 @@
 - 훈련/검증 데이터의 구성에 사용 환경의 맥락이 반영되어 있어야 의도했던 추론 결과를 얻을 수 있음을 배울 수 있었음
 
 ### References
+- https://github.com/ultralytics/yolov5
 
 ---
 
@@ -498,4 +550,7 @@
 - 데이터의 도메인을 고려한 증식 기법이 아닌 경우 오히려 악영향을 미칠 수 있다는 것을 알게 됨
 
 ### References
-- 각종 API 문서 및 이미지 분류 튜토리얼
+- https://www.tensorflow.org/
+- https://keras.io/
+- https://opencv.org/
+- https://python-pillow.org/
