@@ -21,14 +21,14 @@
 
 (진행 중)
 
-### Objective
+### Objectives
 - PLM 모델을 활용한 실사용 목적의 번역기를 만들기 위한 기술 요건을 파악한다.
 
-### Dev Env and Requirements
+### Envs and Requirements
 - AWS EC2, Ubuntu, Conda, Git/Github, DVC, WandB, 
 - PyTorch, Huggingface, Papermill
 
-### 예정사항
+### Todos
 - 
 - 
 - 
@@ -37,10 +37,10 @@
 
 ## Backend API for Chatbot with Poly Encoder
 
-### Objective
+### Objectives
 - 챗봇 서비스를 위한 DB 연동 REST API를 개발한다.
 
-### Dev Env and Requirements
+### Envs and Requirements
 - Colab, WSL2, Ubuntu, Conda, Git/Github
 - MySQL, SQLAlchemy, Flask, Marshmallow, Scrapy, Selenium
 
@@ -73,14 +73,14 @@
 
 ## Retrieval-based Chatbot with Poly Encoder
 
-### Objective
+### Objectives
 - AIHub의 감성대화 데이터로 폴리 인코더를 훈련시키고 리트리벌 챗봇을 구현한다.
 
 ### Models and Data
 - klue/bert-base / Poly Encoder
 - AIHub 감성대화 Train 40879 / Eval 5130
 
-### Dev Env and Requirements
+### Envs and Requirements
 - Colab, AWS EC2, Ubuntu, Conda, Git/Github
 - PyTorch, Huggingface, Pandas
 
@@ -94,6 +94,9 @@
 - 후보 임베딩 사전 산출
 - 유사도 점수 계산 및 GPU 자원 관리
 - 터미널 구동 챗봇 UI 작성
+
+### Result
+- 부트캠프 프로젝트 평가 1위
 
 ### Retrospective
 - 지난주의 학습을 바탕으로 챗봇 구현을 위해 본 프로젝트를 시작
@@ -117,10 +120,10 @@
 
 ## Poly Encoder
 
-### Objective
+### Objectives
 - 폴리 인코더 및 리트리벌 시스템을 이해하고 챗봇 구현 방안을 모색한다.
 
-### Dev Env and Requirements
+### Envs and Requirements
 - Colab, AWS EC2, Ubuntu, Conda, Git/Github
 - PyTorch, Huggingface, SentenceTransformers, Faiss, Pandas, Dialogflow
 
@@ -150,10 +153,10 @@
 
 ## Vanila Transformer Implementation
 
-### Objective
+### Objectives
 - 더 높은 수준의 구현 능력과 모델 활용을 위해 PyTorch를 학습하고 바닐라 트랜스포머를 구현한다.
 
-### Dev Env and Requirements
+### Envs and Requirements
 - Colab, WSL2, Ubuntu, Conda, Git/Github
 - PyTorch, NumPy
 
@@ -183,7 +186,7 @@
 
 ## Text Summarisation with BART
 
-### Objective
+### Objectives
 - Dacon AI 기반 회의 녹취록 요약 경진대회
 - 한정된 데이터와 자원을 활용해 높은 ROUGE 스코어의 요약 모델을 개발한다.
 
@@ -191,7 +194,7 @@
 - ainize/kobart-news / csebuetnlp/mT5_multilingual_XLSum / google/mt5-small
 - 안건별 회의록 및 요약문 2994건(증식 후 247756건)
 
-### Dev Env and Requirements
+### Envs and Requirements
 - Colab, Git/Github, WandB
 - Pandas, Huggingface, PyTorch
 
@@ -211,7 +214,7 @@
 - 각종 제너레이션 메소드 실험
 - ROUGE 스코어 기록 경쟁
 
-### 결과 / 성적
+### Result
 - Public 7위(전체 489팀/연습참가)
 
 ### Retrospective
@@ -242,7 +245,7 @@
 
 ## Text Classification with BERT
 
-### Objective
+### Objectives
 - Dacon 뉴스 토픽 분류 AI 경진대회
 - 한정된 데이터와 자원을 활용해 높은 정확도의 분류 모델을 개발한다.
 
@@ -250,7 +253,7 @@
 - klue/roberta-base / bert-base-multilingual-uncased / xlm-roberta-base
 - 7개 범주 신문기사 제목 45654건(증식 후 101864건)
 
-### Dev Env and Requirements
+### Envs and Requirements
 - Colab, Git/Github
 - Huggingface, PyTorch, Scikit-Learn, Pandas, hanja, translators, googletrans
 
@@ -264,7 +267,7 @@
 - 가중치 적용 로짓 앙상블
 - 정확도 기록 경쟁
 
-### 결과 / 성적
+### Result
 - Public 19위(전체 418팀/연습참가)
 
 ### Retrospective
@@ -289,14 +292,14 @@
 
 ## Poetry Generator with GPT2
 
-### Objective
+### Objectives
 - 시 생성 언어모델 개발을 위해 웹 크롤링한 데이터를 활용, GPT2를 파인튜닝한다.
 
 ### Models and Data
 - skt/kogpt2-base-v2
 - 웹사이트 시 사랑 시의 백과사전 시인의 시 106371건
 
-### Dev Env and Requirements
+### Envs and Requirements
 - Colab, Git/Github
 - BeautifulSoup, Pandas, RE, Huggingface, PyTorch
 
@@ -327,14 +330,14 @@
 
 ## LSTM Seq2Seq with Attention
 
-### Objective
+### Objectives
 - 영한 번역기 개발을 위해 LSTM Encoder-Decoder with Attention 모델을 훈련하고 BLUE 스코어를 측정한다.
 
 ### Models and Data
 - LSTM Encoder-Decoder with Attention
 - AIHub 한국어-영어 번역(병렬) 말뭉치 구어체 20만건
 
-### Dev Env and Requirements
+### Envs and Requirements
 - Colab
 - Tensorflow, Pandas, RE
 
@@ -345,7 +348,7 @@
 - 추가 데이터 확보 / 시퀀스 역순 입력 / 훈련 및 추론
 - BLUE 스코어 기록 경쟁
 
-### 결과 / 성적
+### Result
 - BLUE 스코어 기록 경쟁 1위
 
 ### Retrospective
@@ -362,7 +365,7 @@
 
 ## Text Mining with ML
 
-### Objective
+### Objectives
 - 웹툰 독자의 경향을 파악하기 위해 수치 데이터를 웹 크롤링 후 분석 및 시각화를 진행한다.
 - 우크라사태가 한국 경제에 미치는 영향을 파악하기 위해 웹 크롤링한 신문기사에 워드 클라우드, 토픽 모델링 기법을 활용한다.
 - 로지스틱 리그레션을 활용해 우크라사태 이전/이후 신문기사 내용의 감성 분석을 진행한다.
@@ -372,7 +375,7 @@
 - 네이버 웹툰 장르별 회차별 독자 참여 수치 19622건
 - 우크라사태 이전/이후 신문기사 제목 및 본문 2912건
 
-### Dev Env and Requirements
+### Envs and Requirements
 - Colab
 - BeautifulSoup, Pandas, RE, KoNLPy, Scikit-Learn, Gensim, Matplotlib, Seaborn
 
@@ -407,14 +410,14 @@
 
 ## Object Detection with YOLOv5
 
-### Objective
+### Objectives
 - 폐기물 객체 인식 모델을 개발하기 위해 AIHub의 생활 폐기물 데이터를 활용해 YOLOv5를 훈련한다.
 
 ### Models and Data
 - YOLOv5
 - AIHub 생활 폐기물 이미지 일부 / TACO 데이터셋 일부
 
-### Dev Env and Requirements
+### Envs and Requirements
 - Colab, WSL2, Ubuntu, Conda, WandB
 - YOLOv5, PyTorch, OpenCV, Pillow, NumPy, Matplotlib
 
@@ -425,7 +428,7 @@
 - 추가 데이터 후속 훈련 및 추론
 - 카메라 연동을 통해 실제 환경에서 시험
 
-### 결과 / 성적
+### Result
 - 부트캠프 객체 인식 팀 프로젝트 1위
 
 ### Retrospective
@@ -447,14 +450,14 @@
 
 ## Image Classification with ResNet
 
-### Objective
+### Objectives
 - 재활용품 분류를 위한 모델을 개발하기 위해 이미지를 웹 크롤링한 후 ResNet을 파인튜닝한다.
 
 ### Models and Data
 - ResNet
 - 웹 크롤링 재활용품 이미지 데이터 2000건
 
-### Dev Env and Requirements
+### Envs and Requirements
 - Colab, WSL2, Ubuntu, Conda
 - Tensorflow, Selenium, NumPy, Pillow, OpenCV, Pandas
 
