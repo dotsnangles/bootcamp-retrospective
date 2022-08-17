@@ -1,15 +1,30 @@
-## 목차
+## Contents  
 
+### NLP
+- [NMT with Transformers](#nmt-with-Transformers)
+- [Backend API for Chatbot with Poly Encoder](#backend-api-for-chatbot-with-poly-encoder)
+- [Retrieval-based Chatbot with Poly Encoder](#retrieval-based-chatbot-with-poly-encoder)
+- [Poly Encoder](#poly-encoder)
+- [Vanila Transformer Implementation](#vanila-transformer-implementation)
+- [Text Summarisation with BART](#text-summarisation-with-bart)
+- [Text Classification with BERT](#text-classification-with-bert)
+- [Poetry Generator with GPT2](#poetry-generator-with-gpt2)
+- [LSTM Seq2Seq with Attention](#lstm-seq2seq-with-attention)
+- [Text Mining with ML](#text-mining-with-ml)
+
+### CV
+- [Object Detection with YOLOv5](#object-detection-with-yolov5)
+- [Image Classification with ResNet](#image-classification-with-resnet)
 ---
 
 ## NMT with Transformers
 
 (진행 중)
 
-### 프로젝트 개요
+### Objective
 - PLM 모델을 활용한 실사용 목적의 번역기를 만들기 위한 기술 요건을 파악한다.
 
-### 개발환경 및 사용기술
+### Dev Env and Requirements
 - AWS EC2, Ubuntu, Conda, Git/Github, DVC, WandB, 
 - PyTorch, Huggingface, Papermill
 
@@ -22,14 +37,14 @@
 
 ## Backend API for Chatbot with Poly Encoder
 
-### 프로젝트 개요
-- 챗봇 서비스를 위한 DB 연동 REST API를 개발한다
+### Objective
+- 챗봇 서비스를 위한 DB 연동 REST API를 개발한다.
 
-### 개발환경 및 사용기술
+### Dev Env and Requirements
 - Colab, WSL2, Ubuntu, Conda, Git/Github
 - MySQL, SQLAlchemy, Flask, Marshmallow, Scrapy, Selenium
 
-### 수행사항
+### Progress
 - Git/Github을 통한 프로젝트 관리를 적용
 - 폴리 인코더 챗봇 함수 정리 및 모듈화
 - MySQL 서버 구동 및 챗봇 데이터 이전
@@ -37,7 +52,7 @@
 - Flask와 Marshmallow를 통한 REST API 구현
 - Postman을 사용한 API 시험
 
-### 회고
+### Retrospective
 - 실제 서비스 상황을 염두에 두고 DB를 연동한 REST API를 구현한 프로젝트
 - 단순히 백업용으로 사용하던 Git/Github을 프로젝트 관리에 적용하고자 버전 관리 요령, Merge, Rebase, Pull Request, Conflict Resolve 등에 대해 학습함
 - 프로젝트를 진행하며 Commit Convention에 대해 인지하게 되었고, Commit Message를 좀 더 세련화하기 위한 고민을 이어나감
@@ -52,24 +67,24 @@
 - 모듈화를 진행하며 REST API를 작성하고 Postman을 사용한 시험을 진행
 - 모델 추론과 가장 긴밀하게 연결되어 있는 Backend 기술에 대해 알아가며 AI를 실제 서비스화하기 위해 필요한 다양한 업무들을 살펴보고 이해할 수 있었음
 
-### 참고자료
+### References
 
 ---
 
 ## Retrieval-based Chatbot with Poly Encoder
 
-### 프로젝트 개요
+### Objective
 - AIHub의 감성대화 데이터로 폴리 인코더를 훈련시키고 리트리벌 챗봇을 구현한다.
 
-### 모델 / 데이터
+### Models and Data
 - klue/bert-base / Poly Encoder
 - AIHub 감성대화 Train 40879 / Eval 5130
 
-### 개발환경 및 사용기술
+### Dev Env and Requirements
 - Colab, AWS EC2, Ubuntu, Conda, Git/Github
 - PyTorch, Huggingface, Pandas
 
-### 수행사항
+### Progress
 - 데이터 리포맷
 - 훈련 데이터 검증
 - 적정 Poly-M 설정
@@ -80,7 +95,7 @@
 - 유사도 점수 계산 및 GPU 자원 관리
 - 터미널 구동 챗봇 UI 작성
 
-### 회고
+### Retrospective
 - 지난주의 학습을 바탕으로 챗봇 구현을 위해 본 프로젝트를 시작
 - 구현을 통해 기획을 검증해야 했기 때문에 끊임없이 도전해야 했던 한 주
 - 폴리 인코더 훈련을 위해 한국어 데이터로 사전 학습된 klue/bert-base를 선택
@@ -96,20 +111,20 @@
 - 데모를 위해 터미널에서 작동하는 챗봇 UI를 작성
 - 부트캠프 프로젝트 평가 1위를 달성했으나 프로젝트 관리나 모듈화 측면에서 아쉬움이 있었기에 추후 보완을 계획하게 됨
 
-### 참고자료
+### References
 
 ---
 
 ## Poly Encoder
 
-### 프로젝트 개요
+### Objective
 - 폴리 인코더 및 리트리벌 시스템을 이해하고 챗봇 구현 방안을 모색한다.
 
-### 개발환경 및 사용기술
+### Dev Env and Requirements
 - Colab, AWS EC2, Ubuntu, Conda, Git/Github
 - PyTorch, Huggingface, SentenceTransformers, Faiss, Pandas, Dialogflow
 
-### 수행사항
+### Progress
 - 레퍼런스 및 관련 기술 탐색
 - 논문 리뷰 및 세미나 진행
 - 노후화된 코드 수정
@@ -118,7 +133,7 @@
 - Bi Encoder와 Faiss를 활용한 간단한 챗봇 시스템 구성
 - Retrieval Based Chatbot with Poly Encoder 초기 계획 수립
 
-### 회고
+### Retrospective
 - 챗봇 구현에 앞서 Poly Encoder를 위시한 IR System의 개념을 이해하고 관련 기술을 정리해 구체적인 구현 방안과 계획을 수립하기 위해 보낸 한 주
 - Papers With Code의 Poly Encoder 페이지를 참조해 논문 리뷰를 진행하는 한편 신뢰할 만한 구현으로 추천받은 chijames/Poly-Encoder를 포크해 코드 분석을 진행
 - DSTC 7 데이터로 벤치마크 훈련을 진행하며 노후화된 코드를 보수
@@ -129,27 +144,27 @@
 - 훈련과 검증으로 마무리되었던 지금까지의 프로젝트와는 달리 모델을 시스템 전체의 일부로 사용하는 기술을 처음으로 접하게 됨
 - 사전에 Dialogflow를 사용해보며 접했던 기술들의 원리가 무엇인지 이해하게 됨
 
-### 참고자료
+### References
 
 ---
 
 ## Vanila Transformer Implementation
 
-### 프로젝트 개요
+### Objective
 - 더 높은 수준의 구현 능력과 모델 활용을 위해 PyTorch를 학습하고 바닐라 트랜스포머를 구현한다.
 
-### 개발환경 및 사용기술
+### Dev Env and Requirements
 - Colab, WSL2, Ubuntu, Conda, Git/Github
 - PyTorch, NumPy
 
-### 수행사항
+### Progress
 - 학습 레퍼런스 탐색
 - 논문 리뷰 및 세미나 진행
 - 파이토치 공식 튜토리얼 학습
 - 바닐라 트랜스포머 구현 예시 탐색 및 학습
 - 구현에 사용된 클래스와 펑션 정리
 
-### 회고
+### Retrospective
 - 차주 진행 예정으로 있던 Poly Encoder 프로젝트 직전 수행 능력 구비를 위해 진행한 스터디-프로젝트
 - 딥 러닝 학습을 이어오며 현재 많은 모델이 PyTorch로 구현되어 있음을 알 수 있었고 활용도를 높히기 위해 관련 학습이 필수라는 생각이 커지고 있던 시점
 - Framework의 API 구성을 파악하고 각종 Tensor 조작/연산이 가능해진다면 큰 어려움 없이 PyTorch를 사용할 수 있을 것이라 판단함
@@ -162,25 +177,25 @@
 - 여타 Python의 클래스처럼 Attributes와 Methods를 이해하는 것으로 모델을 사용할 수 있다는 자신감을 얻게 됨
 - 특히 foward 부분에 집중하는 것만으로도 해당 블록이 어떤 작업을 하는지 알 수 있게 된 것은 큰 수확이었음
 
-### 참고자료
+### References
 
 ---
 
 ## Text Summarisation with BART
 
-### 프로젝트 개요
-- AI 기반 회의 녹취록 요약 경진대회
+### Objective
+- Dacon AI 기반 회의 녹취록 요약 경진대회
 - 한정된 데이터와 자원을 활용해 높은 ROUGE 스코어의 요약 모델을 개발한다.
 
-### 모델 / 데이터
+### Models and Data
 - ainize/kobart-news / csebuetnlp/mT5_multilingual_XLSum / google/mt5-small
 - 안건별 회의록 및 요약문 2994건(증식 후 247756건)
 
-### 개발환경 및 사용기술
+### Dev Env and Requirements
 - Colab, Git/Github, WandB
 - Pandas, Huggingface, PyTorch
 
-### 수행사항
+### Progress
 - 데이터 리포맷
 - 데이터 분석 및 시각화
 - 모델 선택 및 훈련 코드 작성
@@ -199,7 +214,7 @@
 ### 결과 / 성적
 - Public 7위(전체 489팀/연습참가)
 
-### 회고
+### Retrospective
 - 다양한 NLP Downstream tasks를 경험해보고자 문서 요약 경진 대회에 참가
 - 벤치마크를 할 만한 상위 성적의 베이스라인이 없었기 때문에 Huggingface의 요약 태스크 튜토리얼을 학습하는 것부터 시작
 - 요약 데이터로 사전 학습된 모델의 요약 성능이 더 좋다는 정보를 입수해 한국어로 사전 학습된 Pegasus 계열을 검색해봤으나 발견할 수 없었음
@@ -221,25 +236,25 @@
 - 실제 요약물의 활용 가능성을 살펴보기 위한 정성 평가 진행 후 Encoder-Decoder 계열 PLM의 성능이 상당하다는 것을 알 수 있었음
 - 과거 프로젝트에서 경험한 RNN 계열의 Encoder-Decoder 번역기와 비교시 태스크 차이는 있으나 훈련 방식이 동일하다는 점을 고려했을 때 Transformer와 PLM의 등장으로 NLP 전반의 수행 능력이 크게 높아졌음을 체감
 
-### 참고자료
+### References
 
 ---
 
 ## Text Classification with BERT
 
-### 프로젝트 개요
+### Objective
 - Dacon 뉴스 토픽 분류 AI 경진대회
 - 한정된 데이터와 자원을 활용해 높은 정확도의 분류 모델을 개발한다.
 
-### 모델 / 데이터
+### Models and Data
 - klue/roberta-base / bert-base-multilingual-uncased / xlm-roberta-base
 - 7개 범주 신문기사 제목 45654건(증식 후 101864건)
 
-### 개발환경 및 사용기술
+### Dev Env and Requirements
 - Colab, Git/Github
 - Huggingface, PyTorch, Scikit-Learn, Pandas, hanja, translators, googletrans
 
-### 수행사항
+### Progress
 - 데이터 리포맷
 - 데이터 분석 및 시각화
 - 모델 선택 및 훈련 코드 작성
@@ -252,7 +267,7 @@
 ### 결과 / 성적
 - Public 19위(전체 418팀/연습참가)
 
-### 회고
+### Retrospective
 - 다양한 NLP Downstream tasks를 경험해보고자 문서 분류 경진 대회에 참가
 - 분류 태스크 수행에 효과적인 방법들을 탐색
 - 마감 기한을 고려해 사전 시험 성적이 좋았던 3개 모델로 Stratified K-Fold / 로짓 앙상블을 진행하기로 함
@@ -268,31 +283,31 @@
 - 앙상블 효과를 높히기 위해 모델별 로짓에 가중치를 변경하며 실험을 진행
 - 기획부터 구현까지 각각의 판단들이 모여 하나의 결과물을 만들어내는 만큼 다양한 가능성에 대해 생각하고 타당성을 검토하며 프로젝트를 진행해야 한다는 것을 배움
 
-### 참고자료
+### References
 
 ---
 
 ## Poetry Generator with GPT2
 
-### 프로젝트 개요
+### Objective
 - 시 생성 언어모델 개발을 위해 웹 크롤링한 데이터를 활용, GPT2를 파인튜닝한다.
 
-### 모델 / 데이터
+### Models and Data
 - skt/kogpt2-base-v2
 - 웹사이트 시 사랑 시의 백과사전 시인의 시 106371건
 
-### 개발환경 및 사용기술
+### Dev Env and Requirements
 - Colab, Git/Github
 - BeautifulSoup, Pandas, RE, Huggingface, PyTorch
 
-### 수행사항
+### Progress
 - 웹 크롤링 및 텍스트 데이터 정제
 - GPT-2 토크나이저로 토큰화 및 정수 인코딩 / SentencePiece 토크나이저 학습
 - 훈련 코드 작성 및 훈련
 - 문장 생성 종료를 위한 스페셜 토큰 추가
 - 각종 제너레이션 메소드 실험
 
-### 회고
+### Retrospective
 - 처음으로 Transformer PLM을 활용해본 프로젝트
 - 당시에는 Masked LM보다는 Causal LM의 활용 방안이 더 직관적이었기 때문에 한국어로 사전 학습 된 GPT 계열의 모델을 탐색함
 - SKT에서 사전 학습한 KoGPT-2를 발견하고 Transformer PLM 허브인 Huggingface를 활용해야 함을 인지
@@ -306,24 +321,24 @@
 - 기발한 표현의 문장들이 생성되는 것을 기대했으나 최종 결과물로 산출한 문장들은 복고풍의 서정시인 경우가 많았음
 - 좋은 결과물을 얻기 위해서는 좋은 데이터를 사용해야 한다는 점을 재차 확인
 
-### 참고자료
+### References
 
 ---
 
 ## LSTM Seq2Seq with Attention
 
-### 프로젝트 개요
+### Objective
 - 영한 번역기 개발을 위해 LSTM Encoder-Decoder with Attention 모델을 훈련하고 BLUE 스코어를 측정한다.
 
-### 모델 / 데이터
+### Models and Data
 - LSTM Encoder-Decoder with Attention
 - AIHub 한국어-영어 번역(병렬) 말뭉치 구어체 20만건
 
-### 개발환경 및 사용기술
+### Dev Env and Requirements
 - Colab
 - Tensorflow, Pandas, RE
 
-### 수행사항
+### Progress
 - 성능 향상을 위한 모델 수정
 - 데이터 확보 및 정제
 - 토큰화 및 코퍼스 사전 구축 / 훈련 및 추론
@@ -333,7 +348,7 @@
 ### 결과 / 성적
 - BLUE 스코어 기록 경쟁 1위
 
-### 회고
+### Retrospective
 - RNN 계열 수업 후 Encoder-Decoder 모델의 원리를 익히고 Attention 기작의 효과를 확인하기 위해 진행한 프로젝트
 - Attention이 포함되지 않은 LSTM Seq2Seq 모델의 레이어 구성과 하이퍼 파라미터 수정을 수차례 진행했으나 번역이라고 느껴질 만한 결과물을 만들어내지 못 함
 - 동일한 데이터로 Attention을 포함한 모델이 월등히 우수한 결과물을 만들어내는 것을 확인
@@ -341,27 +356,27 @@
 - 추가 데이터로 최종 훈련을 진행하고 기록 경쟁에서 1위를 차지
 - 함수형 모델 작성과 수정에 있어서 어려움이 많았기 때문에 추후 복습과 재학습의 필요성을 느낌
 
-### 참고자료
+### References
 
 ---
 
 ## Text Mining with ML
 
-### 프로젝트 개요
+### Objective
 - 웹툰 독자의 경향을 파악하기 위해 수치 데이터를 웹 크롤링 후 분석 및 시각화를 진행한다.
 - 우크라사태가 한국 경제에 미치는 영향을 파악하기 위해 웹 크롤링한 신문기사에 워드 클라우드, 토픽 모델링 기법을 활용한다.
 - 로지스틱 리그레션을 활용해 우크라사태 이전/이후 신문기사 내용의 감성 분석을 진행한다.
 
-### 모델 / 데이터
+### Models and Data
 - TF-IDF / LDA / Logistic Regression
 - 네이버 웹툰 장르별 회차별 독자 참여 수치 19622건
 - 우크라사태 이전/이후 신문기사 제목 및 본문 2912건
 
-### 개발환경 및 사용기술
+### Dev Env and Requirements
 - Colab
 - BeautifulSoup, Pandas, RE, KoNLPy, Scikit-Learn, Gensim, Matplotlib, Seaborn
 
-### 수행사항
+### Progress
 - 웹 크롤링 및 텍스트 데이터 정제
 - 데이터 분석 및 시각화
 - 토큰화 및 코퍼스 사전 구축
@@ -372,7 +387,7 @@
 - 응집도 / 복잡도 기준 최적 에폭 및 토픽 갯수 설정
 - 로지스틱 리그레션을 활용한 감성 분석
 
-### 회고
+### Retrospective
 - 웹 크롤링과 ML 기초를 배운 후 유의미한 적용을 위해 진행한 프로젝트
 - BeautifulSoup을 사용해 목표 범위의 데이터를 크롤링하는 코드를 작성
 - 웹 크롤링을 기법으로 단기간에 방대한 데이터 확보가 가능함을 알게 되었고, 재사용 가능한 코드 작성의 중요성에 대해 배울 수 있었음
@@ -386,24 +401,24 @@
 - 실험 결과 보존이 되지 않은 상황에서 재현조차 불가능한 경우가 있었는데 답이 정해져 있지 않은 만큼 경험적으로 접근하며 기록을 남겨야 함을 깨달음
 - 같은 하이퍼 파라미터 설정으로 다른 결과가 도출되는 것을 방지하기 위해 랜덤스테이트(Seed)를 고정해야 함을 알게 됨
 
-### 참고자료
+### References
 
 ---
 
 ## Object Detection with YOLOv5
 
-### 프로젝트 개요
+### Objective
 - 폐기물 객체 인식 모델을 개발하기 위해 AIHub의 생활 폐기물 데이터를 활용해 YOLOv5를 훈련한다.
 
-### 모델 / 데이터
+### Models and Data
 - YOLOv5
 - AIHub 생활 폐기물 이미지 일부 / TACO 데이터셋 일부
 
-### 개발환경 및 사용기술
+### Dev Env and Requirements
 - Colab, WSL2, Ubuntu, Conda, WandB
 - YOLOv5, PyTorch, OpenCV, Pillow, NumPy, Matplotlib
 
-### 수행사항
+### Progress
 - YOLOv5 모델의 규격에 맞춰 어노테이션을 리포맷
 - 이미지 크기 조절, 중앙 배치, 패딩, 제로 센터링
 - WandB 로그를 통한 훈련 과정 모니터링
@@ -413,7 +428,7 @@
 ### 결과 / 성적
 - 부트캠프 객체 인식 팀 프로젝트 1위
 
-### 회고
+### Retrospective
 - YOLOv3 실습 이후 객체 인식 어플리케이션의 기획 및 구현을 시도한 프로젝트
 - 객체 인식 모델의 성능 평가 지표인 IOU, mAP에 대해 학습
 - 평가 지표의 개념을 토대로 객체 인식 태스크를 이해
@@ -426,36 +441,36 @@
 - 훈련 후 카메라 연동을 통해 모델을 실제 환경에서 시험해봤으나 기대에 못 미치는 결과를 얻음
 - 훈련/검증 데이터의 구성에 사용 환경의 맥락이 반영되어 있어야 의도했던 추론 결과를 얻을 수 있음을 배울 수 있었음
 
-### 참고자료
+### References
 
 ---
 
 ## Image Classification with ResNet
 
-### 프로젝트 개요
+### Objective
 - 재활용품 분류를 위한 모델을 개발하기 위해 이미지를 웹 크롤링한 후 ResNet을 파인튜닝한다.
 
-### 모델 / 데이터
+### Models and Data
 - ResNet
 - 웹 크롤링 재활용품 이미지 데이터 2000건
 
-### 개발환경 및 사용기술
+### Dev Env and Requirements
 - Colab, WSL2, Ubuntu, Conda
 - Tensorflow, Selenium, NumPy, Pillow, OpenCV, Pandas
 
-### 수행사항
+### Progress
 - 웹 크롤링
 - 이미지 크기 조절, 중앙 배치, 패딩, 제로 센터링
 - 데이터 증식
 - LR Scheduler 및 Early Stopping 사용
 - 파인튜닝 및 추론
 
-### 회고
+### Retrospective
 - 기본적인 이미지 전처리와 Tensorflow를 활용한 이미지 데이터 증식을 실습하기 위해 진행한 프로젝트
 - 제 각기 다른 비율의 이미지를 훈련 데이터로 사용하는 것은 추론 단계에서 오류를 일으킬 가능성이 있다는 생각이 들어 관련 정보를 탐색
 - 일반적인 전처리 과정인 중앙 배치와, 패딩, 제로 센터링에 대해 알게 됨
 - 또한 훈련 데이터 부족을 만회하기 위해 각종 증식 기법을 적용해봄
 - 데이터의 도메인을 고려한 증식 기법이 아닌 경우 오히려 악영향을 미칠 수 있다는 것을 알게 됨
 
-### 참고자료
+### References
 - 각종 API 문서 및 이미지 분류 튜토리얼
