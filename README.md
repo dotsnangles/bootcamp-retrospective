@@ -1,20 +1,20 @@
 ## Contents  
 
 ### NLP
-- [NMT with Transformers](#nmt-with-Transformers)
-- [Backend API for Chatbot with Poly Encoder](#backend-api-for-chatbot-with-poly-encoder)
-- [Retrieval-based Chatbot with Poly Encoder](#retrieval-based-chatbot-with-poly-encoder)
-- [Poly Encoder](#poly-encoder)
-- [Vanila Transformer Implementation](#vanila-transformer-implementation)
-- [Text Summarisation with BART](#text-summarisation-with-bart)
-- [Text Classification with BERT](#text-classification-with-bert)
-- [Poetry Generator with GPT2](#poetry-generator-with-gpt2)
-- [LSTM Seq2Seq with Attention](#lstm-seq2seq-with-attention)
-- [Text Mining with ML](#text-mining-with-ml)
+- [NMT with Transformers](#nmt-with-Transformers) (20220801-)
+- [Backend API for Chatbot with Poly Encoder](#backend-api-for-chatbot-with-poly-encoder) (20220725-28)
+- [Retrieval-based Chatbot with Poly Encoder](#retrieval-based-chatbot-with-poly-encoder) (20220701-10)
+- [Poly Encoder](#poly-encoder) (20220625-30)
+- [Vanila Transformer Implementation](#vanila-transformer-implementation) (20220620-24)
+- [Text Summarisation with BART](#text-summarisation-with-bart) (20220613-19)
+- [Text Classification with BERT](#text-classification-with-bert) (20220606-12)
+- [Poetry Generator with GPT2](#poetry-generator-with-gpt2) (202205-06)
+- [LSTM Seq2Seq with Attention](#lstm-seq2seq-with-attention) (202205)
+- [Text Mining with ML](#text-mining-with-ml) (202203-04)
 
 ### CV
-- [Object Detection with YOLOv5](#object-detection-with-yolov5)
-- [Image Classification with ResNet](#image-classification-with-resnet)
+- [Object Detection with YOLOv5](#object-detection-with-yolov5) (202205)
+- [Image Classification with ResNet](#image-classification-with-resnet) (202204)
 ---
 
 ## NMT with Transformers
